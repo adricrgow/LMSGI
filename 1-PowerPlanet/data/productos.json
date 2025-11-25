@@ -1,0 +1,152 @@
+[
+  { 
+    "id": 1,
+    "nombre": "Cubot C45 AZUL - Reloj inteligente",
+    "descuento": "30%",
+    "precioOriginal": "49,99 €",
+    "precio": "34,99 €",
+    "imagen": "https://imgs.search.brave.com/xAGAtA0ROUGrjt84mck3RYYIahTqN69MiLM1rJ7q9m4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzc1MzM5NS1NTEE4/NTI1MzQ1MzIyM18w/NTIwMjUtVi53ZWJw",
+    "nvaloraciones": 5.4,
+    "opiniones": 10,
+    "caracteristicas": {
+      "cpu": "Chipset Realtek RTL8762C",
+      "ram": "ram: 256 MB",
+      "disco": "disco: 512 MB"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "iPhone 16 5G 128GB Azul",
+    "precio": 799.00,
+    "precioOriginal": 959.00,
+    "descuento": 17,
+    "imagen": "https://m.media-amazon.com/images/I/712Pyq1hPfL._AC_UF894,1000_QL80_.jpg",
+    "nvaloraciones": 5,
+    "opiniones": 34,
+    "caracteristicas": {
+      "cpu": "Apple A18 Bionic",
+      "ram": "8 GB",
+      "disco": "128 GB"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Samsung Galaxy S24 Ultra",
+    "precio": 999.00,
+    "precioOriginal": 1180.00,
+    "descuento": 15,
+    "imagen": "https://imgs.search.brave.com/41zS1y79BBrVAY5rBaat9FcAhzYgfAqaGDLCRceBzy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d29ydGVuLmVzL2kv/MjIxMjhmY2NjYjll/NDg0N2FjYTk0YmE1/ZTdiNTU2MjBkMGRi/NWNhZg",
+    "nvaloraciones": 4.9,
+    "opiniones": 87,
+    "caracteristicas": {
+      "cpu": "Snapdragon 8 Gen 3",
+      "ram": "12 GB",
+      "disco": "256 GB"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Huawei Watch Fit 2",
+    "precio": 89.99,
+    "precioOriginal": 119.99,
+    "descuento": 25,
+    "imagen": "https://imgs.search.brave.com/oMxGg_02fBKfC-Wc1KcUHUHnwaWDxW_-WrwYkmY-P2c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb25z/dW1lci5odWF3ZWku/Y29tL2RhbS9jb250/ZW50L2RhbS9odWF3/ZWktY2JnLXNpdGUv/Y2VlLW5vcmRpY3Mv/Y29tbW9uL21rdC9w/ZHAvd2VhcmFibGVz/L3dhdGNoLWZpdC1z/cGVjaWFsLWVkaXRp/b24vaW1hZ2VzL2Zp/dG5lc3MvaHVhd2Vp/LXdhdGNoLWZpdC1z/cGVjaWFsLWVkaXRp/b24tc2xlZXAtdHJh/Y2tpbmcucG5n",
+    "nvaloraciones": 4.6,
+    "opiniones": 54,
+    "caracteristicas": {
+      "cpu": "HiSilicon Kirin A1",
+      "ram": "128 MB",
+      "disco": "4 GB"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Xiaomi Redmi Note 13 Pro",
+    "precio": 299.99,
+    "precioOriginal": 333.00,
+    "descuento": 10,
+    "imagen": "https://imgs.search.brave.com/2iewf0lNJV98DRTJwa4emmzNm8h13Ab95QmIKAOz4vM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tb3Zp/bHBsYW5ldC5ldS84/Mzc2LWhvbWVfZGVm/YXVsdC94aWFvbWkt/cmVkbWktbm90ZS0x/My1wcm8tNWctMjU2/Z2IuanBn",
+    "nvaloraciones": 4.5,
+    "opiniones": 120,
+    "caracteristicas": {
+      "cpu": "MediaTek Helio G99 Ultra",
+      "ram": "8 GB",
+      "disco": "256 GB"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Apple Watch SE 2",
+    "precio": 269.00,
+    "precioOriginal": 329.00,
+    "descuento": 20,
+    "imagen": "https://imgs.search.brave.com/YmDY9D6yj1ID1jAtHOtHeIQWInCwLvfSzMwpmKUFplQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWFx/dzVtejB3bmdxZS5j/bG91ZGZyb250Lm5l/dC9pbWFnZXMvc3By/ZWUvaW1hZ2VzLzI0/NDQ3MTMvYXR0YWNo/bWVudHMvbGFyZ2Uv/QXBwbGVfQXBwbGVf/V2F0Y2hfU0VfTFRF/XzQwbW1fU3Rhcmxp/Z2h0X0FsdW1pbnVt/X1N0YXJsaWdodF9T/cG9ydF9Mb29wXzEu/anBnPzE2OTU4NjUz/NzY",
+    "nvaloraciones": 4.8,
+    "opiniones": 102,
+    "caracteristicas": {
+      "cpu": "Apple S8 SiP",
+      "ram": "1 GB",
+      "disco": "32 GB"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Amazfit GTR 3",
+    "precio": 119.00,
+    "precioOriginal": 169.00,
+    "descuento": 30,
+    "imagen": "https://imgs.search.brave.com/9ODVve4hmHOXhxWEb0KJ8dEmWf6d-6x9ecDLLtEV0ak/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWRlYWxvLmNvbS9m/b2xkZXIvUHJvZHVj/dC8yMDE2MzkvOS8y/MDE2Mzk5MzcvczEx/X3Byb2R1a3RiaWxk/X2dyb3NzL2FtYXpm/aXQtZ3RyLTMuanBn",
+    "nvaloraciones": 4.5,
+    "opiniones": 76,
+    "caracteristicas": {
+      "cpu": "Zepp OS Dual-Core",
+      "ram": "512 MB",
+      "disco": "4 GB"
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "MacBook Air M2",
+    "precio": 1199.00,
+    "precioOriginal": 1299.00,
+    "descuento": 8,
+    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop",
+    "nvaloraciones": 4.9,
+    "opiniones": 210,
+    "caracteristicas": {
+      "cpu": "Apple M2",
+      "ram": "8 GB",
+      "disco": "512 GB SSD"
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Razer BlackWidow V4",
+    "precio": 179.00,
+    "precioOriginal": 239.00,
+    "descuento": 25,
+    "imagen": "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?w=500&auto=format&fit=crop",
+    "nvaloraciones": 4.7,
+    "opiniones": 42,
+    "caracteristicas": {
+      "cpu": "Microcontrolador Razer v3",
+      "ram": "1 MB",
+      "disco": "Interno no aplicable"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "JBL Charge 5",
+    "precio": 129.99,
+    "precioOriginal": 159.99,
+    "descuento": 18,
+    "imagen": "https://imgs.search.brave.com/skE-9QeEctzBCoNX-s0vsmHK-f05pJV-8k2RFMRm0Ak/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Z3J1cG9lbGNvcnRl/aW5nbGVzLmVzL1NH/Rk0vZGN0bS9NRURJ/QTAzLzIwMjEwNC8x/OS8wMDEzODU0NTIz/NjQxNl9fX18xMF9f/MTIwMHgxMjAwLmpw/Zw",
+    "nvaloraciones": 4.6,
+    "opiniones": 89,
+    "caracteristicas": {
+      "cpu": "DSP Qualcomm QCC5124",
+      "ram": "256 MB",
+      "disco": "No aplica"
+    }
+  }
+]

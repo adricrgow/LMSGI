@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* medida fija/absoluta --> px */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+    /* altura/anchura relativa % */
+    /* flex-basis: 5%; */ /* relativo */
+    height: 5vh; /* altura fija/absoluta adapta viewport */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: white;
+}
+header #menu {
+    flex-basis: 5%;
+}
+
+header #buscar {
+    flex-basis: 30%;
+    background-color: blue;
+}
+header figure {
+    flex-basis: 10%; /* WIDTH */
+    height: 100%;
+}
+header figure img{
+    height: 100%; /* 70% de la height del padre */
+}
+header form{
+    flex-basis: 20%; /* WIDTH */
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column; /* eje principal columna */
+    justify-content: center; /* alineacion en eje principal */
+    align-items: center; /* alineacion en eje secunfdario */
+}
+
+header form input{
+    flex-basis: 50%; /* height */
+    width: 80%;
+    border-radius: 20px;
+    font-size: 20px;
+    color: blue;
+    background-color: bisque;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header #enlaces {
+    background-color: yellow;
+    flex-basis: 30%;
+}
+main {
+    flex-basis: 65%;
+    background-color: azure;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section article{
+    position: relative;
+    border: 1px solid black;
+    flex-basis: 24% ;/*ancho si el padre es row y si es colum es el weihgt*/
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 5px 0px;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 8px;
+    /*Relleno interno*/
+    padding: 5px 10px 5px 10px;
+    /*efecto reposo*/
+    transition: all 0.3s ease-in;
+
+}
+main section article:hover{
+    /*Efecto sonbra*/
+    box-shadow: 2px 2px 2px 1px rgb(0,0,0,1);
+    /*efecto sobre*/
+    transform: translateY(-3px);
+    background-color: antiquewhite;
+}
+main section article .envio {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: rgb(202,78,148);
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+
+    
+}
+main section article figure{
+flex-basis: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+main section article figure img{
+    flex-basis: 100%;
+}
+main section article .nombre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main section article .valoraciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    gap: 5px;
+    
+}
+main section article .valoraciones .star{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+justify-items: center;
+
+}
+main section article .valoraciones .star i{
+    font-size: 10px;
+    color: gold;
+}
+main section article .valoraciones .nvaloraciones{
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+main section article .valoraciones .opiniones{
+    font-size: 10px;
+    color: gold;
+    font-weight: bold;
+    
+    
+    
+}
+main section article .caracteristicas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section article .caracteristicas .cpu{
+    flex-basis: 100%;
+    text-align: center;
+}
+main section article .caracteristicas .ram{
+    flex-basis: 50%;
+    text-align: start;
+}
+main section article .caracteristicas .disco{
+    flex-basis: 50%;
+    text-align: end;
+}
+main section article .Precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    gap: 5px;
+    
+}
+.ficha {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.carrusel {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carrusel img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.carrusel button {
+  background-color: #eee;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.info {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.valoraciones i {
+  color: gold;
+}
+
+.precio .dto {
+  color: red;
+  font-weight: bold;
+}
+
+.precio .pvr {
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.precio .pvp {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+    flex-basis: 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    /* todos los hijos (items) en una sola linea */
+    /*flex-wrap: nowrap;*/
+    /* todos los hijos (items) en varias lineas en funccion flexbasic */
+    flex-wrap: wrap;
+}
+footer nav#sociales {
+    background-color: rgb(0, 0, 0);
+    flex-basis: 50%; /* height (columno) / width (row) */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+footer nav#sociales a{
+    /*Estado de reposo del enlace*/
+    text-decoration: none;
+    border: 0px solid black; 
+    background-color: lightgreen;
+    /* elemento en linea pero con propiedades de bloque */
+    display: inline-block;
+    
+    width: 30px;
+    height: 30px;
+    border-radius:50px;
+    margin-right: 7px;;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* realizar un cambio animado*/
+    transition: all 0.3s ease-in-out;
+    
+}
+footer nav#sociales a:hover{
+    /*Estado sobre fotograma*/
+    transform: translate(0px, -10px)
+    rotate(60deg)
+    scale(1.2);
+}
+
+footer nav#sociales a i {
+    font-size: 20px;
+    color: white;
+}
+    
+footer div#subscribete{
+    background-color: burlywood;
+    flex-basis: 50%;
+    
+}
+
+footer article {
+    border: 1px solid black;
+    flex-basis: 33.33%;
+    padding-top: 20px;
+}
+footer article h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+footer article nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+footer article nav a{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer article nav a i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+footer article nav a span {
+    font-size: 18px;
+}
+
+footer article nav a:hover span{
+    color: lightgreen
+}
+footer article nav a:hover i{
+    /* colorfooter article nav a:hover span{
+    color: lightgreen
+}: red */
+}
