@@ -1,0 +1,116 @@
+* { /* selector universal  - a todos loa elementos en htmla*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Modelo de caja*/
+/*EB header,footer,main*/
+/*El a,p*/
+}
+body {
+    background-color: none;
+    height: 100vh;
+    /*min-height: 100vh;*/
+    /*max-height: 100vh;*/
+    width: 100vw;
+    /*min-width: 100vh;*/
+    /*max-width: 100vh;*/
+
+}
+header {
+    background-color: turquoise;
+    height: 10vh;
+    text-align: center;
+    /*es un contenedor flexible*/
+    display: flex;
+    flex-direction: row; /*direccion de los hijos*/
+    flex-wrap: nowrap; /*todos los hijos en una sola linea*/
+    justify-content: space-around;
+}
+header figure {
+    height: 100%;
+    border: 1px solid gold;
+}
+header figure img {
+    height: 100%;
+}
+header h1 {
+    color:azure;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    /*opcion 2*/
+    flex-direction: column;
+    justify-content: center;
+    /*opcion 1*/
+    /* flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+
+}
+header nav {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header nav a {
+    color: goldenrod;
+    border: 1px solid black;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+header nav a:hover {
+    background-color: chocolate;
+}
+
+
+
+main {
+    background-color: bisque;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+main nav {
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+main section {
+    border: 2px solid black;
+    flex-basis: 60%;
+}
+main aside {
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+footer {
+    background-color: aquamarine;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+footer nav {
+    flex-basis: 50%;
+    
+}
+footer div {
+    flex-basis: 50%;
+    text-align: right;
+}
+footer nav figure {
+    height: 100%;
+}
+footer nav figure a img {
+    height: 50%;
+}
+footer nav figure a img:hover {
+    background-color: black;
+}
