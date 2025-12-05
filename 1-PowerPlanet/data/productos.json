@@ -11,7 +11,10 @@
     "caracteristicas": {
       "cpu": "Chipset Realtek RTL8762C",
       "ram": "ram: 256 MB",
-      "disco": "disco: 512 MB"
+      "disco": "disco: 512 MB",
+      "galeria":[
+        
+      ]
     }
   },
   {
