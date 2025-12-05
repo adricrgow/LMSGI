@@ -33,9 +33,9 @@
             <article>
                 <p class="envio">Envio Gratis</p>
                 <figure>
-                    <a href="Producto1.html">
+                    
                         <img src="img/tablet.jpg" width="100px">
-                    </a>
+                 
                     
                 </figure>
                 <p class="nombre">DOOGEE T30MAX Andriod 14 Tablet 4K</p>
@@ -206,9 +206,8 @@
                 `
                     <p class="envio">Envio Gratis</p>
                     <figure>
-                        <a href="Producto1.html">
+                        
                         <img width= "100px" src="${producto.imagen}" />
-                        </a>
                     </figure>
                     <p class="nombre">${producto.nombre}</p>
                     <div class="valoraciones">
@@ -234,6 +233,9 @@
                     </div>
                 `;
                 contSeccion.appendChild(tarjeta)
+                tarjeta.addEventListener('click', () => {
+                    window.location.href = `detalleJS.html?id=${producto.id}`;
+                })
             })
         })
 </script>
