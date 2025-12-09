@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caronte</title>
-    <link rel="stylesheet" href="CSS/acrdetalle.css">
+    <link rel="stylesheet" href="CSS/acrIndex.css">
     
 </head>
 <body>
@@ -17,19 +17,79 @@
     <div class="logo-Caronte">
       <img src="img/logo.jpeg" alt="Logo Caronte">
       <h1>Librería Caronte Sistemas</h1>
-    </div>
-    <nav>
+      <nav>
         <a href="#">Bases de Datos</a>
         <a href="#">Programación</a>
         <a href="#">Ciberseguridad</a>
         <a href="#">DevOps</a>
     </nav>
+    </div>
+    
   </header>
 
   <main>
     <section>
       <article class="libro">
+        <img src="img/python.jpg" alt="Portada del libro">
+        <div class="info-libro">
+            <h2>Aprendiendo Python</h2>
+            <p>Autor: Juan Pérez</p>
+            <p>Precio: 29.99€</p>
+            <button>Añadir a la cesta</button>
+        </div>
+</article>
+
     </section>
   </main>
+
+  <footer>
+  </footer>
 </body>
 </html>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector("main section");
+
+  fetch("./Data/libros.json")
+    .then(response => response.json())
+    .then(libros => {
+      libros.forEach(libro => {
+        const article = document.createElement("article");
+        article.classList.add("libro");
+
+        const img = document.createElement("img");
+        img.src = libro.imagen;
+        img.alt = libro.nombre;
+
+        const info = document.createElement("div");
+        info.classList.add("info-libro");
+
+        const titulo = document.createElement("h2");
+        titulo.textContent = libro.nombre;
+
+        const autor = document.createElement("p");
+        autor.textContent = "Autor: " + libro.autor;
+
+        const precio = document.createElement("p");
+        precio.textContent = "Precio: " + libro.precio.toFixed(2) + " €";
+
+        const boton = document.createElement("button");
+        boton.textContent = "Añadir a la cesta";
+
+        info.appendChild(titulo);
+        info.appendChild(autor);
+        info.appendChild(precio);
+        info.appendChild(boton);
+
+        article.appendChild(img);
+        article.appendChild(info);
+        section.appendChild(article);
+         article.addEventListener("click", () => {
+          window.location.href = `src/acrdetalle.html?isbn=${libro.isbn}`;
+        });
+
+        section.appendChild(article);
+      });
+    })
+    });
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caronte</title>
+    <link rel="stylesheet" href="CSS/acrdetalle.css">
+    
+</head>
+<body>
+  <header>
+    <div class="atencion">
+        <h1>Atención al cliente</h1>
+        <a href="#">Mi Cuenta</a>
+        <a href="#">Mi Cesta</a>
+    </div>
+    <div class="logo-Caronte">
+      <img src="img/logo.jpeg" alt="Logo Caronte">
+      <h1>Librería Caronte Sistemas</h1>
+      <nav>
+        <a href="#">Bases de Datos</a>
+        <a href="#">Programación</a>
+        <a href="#">Ciberseguridad</a>
+        <a href="#">DevOps</a>
+    </nav>
+    </div>
+    
+  </header>
+
+  <main>
+    <section>
+      <article class="libro">
+        </div>
+</article>
+
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const isbn = params.get("isbn");
+
+      fetch("/Data/libros.json")
+        .then(response => response.json())
+        .then(libros => {
+          const libro = libros.find(l => l.isbn === isbn);
+          if (!libro) return;
+
+          document.getElementById("imagen").src = libro.imagen;
+          document.getElementById("nombre").textContent = libro.nombre;
+          document.getElementById("autor").textContent = "Autor: " + libro.autor;
+          document.getElementById("precio").textContent = libro.precio.toFixed(2) + " €";
+          document.getElementById("descripcion").textContent = libro.descripcion;
+          document.getElementById("categoria").textContent = "Categoría: " + libro.categoria;
+          document.getElementById("nivel").textContent = "Nivel: " + libro.nivel;
+          document.getElementById("stock").textContent = "Stock: " + libro.stock;
+        })
+    });
+  </script>
