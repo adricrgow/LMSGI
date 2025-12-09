@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+div{
+
+
+}
+
+div.atencion {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+div.atencion h1 {
+  font-size: 18px;
+  color: white; 
+}
+
+div.atencion a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+div.logo-nombre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logo-nombre img {
+  height: 20px;
+}
+
+nav  {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  border: 2px solid black;
+  width: 100%;
+  padding: 20px;
+}
+
+section {
+  border: 2px solid black;
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+}
+
+article.libro {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+article h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.categoria {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 6px;
+  background-color: #eee;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
