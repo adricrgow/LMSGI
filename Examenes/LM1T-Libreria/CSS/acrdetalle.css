@@ -19,6 +19,9 @@ header {
   background-color: #fff;
   border-bottom: 2px solid #ccc;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 div{
@@ -42,6 +45,30 @@ div.atencion h1 {
   font-size: 18px;
   color: white; 
 }
+div.atencion nav a {
+  flex-basis: 100%;
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+header div nav.navegacion-principal {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+header div nav.navegacion-principal a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
 
 div.atencion a {
   color: white;
@@ -49,43 +76,19 @@ div.atencion a {
   margin-left: 5px;
   font-weight: bold;
 }
-
-div.logo-Caronte {
-  flex-basis: 50%;
+div.figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-  background-color: #333;
-  
 }
-
-div.logo-Caronte img {
-  display: block;
-  height: 100%;
-  padding-right: 10px;
-}
-
-div.logo-Caronte h1 {
-  color: white;
-  font-size: 24px;
-  padding-right: 10px;
-}
-
-div.logo-Caronte nav  {
-  list-style: none;
-  padding: 0;
+div.figure .img {
+  flex-basis: 20%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
-div.logo-Caronte nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-header div.logo-Caronte nav a:hover {
+header div nav.navegacion-principal a:hover {
   box-shadow: 2px 2px 2px 1px rgb(0,0,0,1);
   transform: translateY(-3px);
   background-color: green;

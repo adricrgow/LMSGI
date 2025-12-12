@@ -13,79 +13,80 @@ body {
 }
 
 header {
-  width: 20vh;
-  height: 20vw;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 2px solid #ccc;
-  text-align: center;
-}
-
-div{
+  margin: 0;
+  box-sizing: border-box;
+  flex-basis: 10vh;
+  background-color: black;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-
+  padding: 0;
 }
 
-div.atencion {
+header nav:first-of-type {
   flex-basis: 100%;
   background-color: #4CAF50;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
+  gap: 12px;
+  padding: 6px 12px;
+}
+header nav:first-of-type a:first-child {
+   margin-right: auto;
+   }
+
+header nav:first-of-type a{
+  color: #fff;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
 }
 
-div.atencion h1 {
-  font-size: 18px;
+header nav.navegacion-principal {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%; 
+  margin-left: auto;
+  background: transparent;
+}
+header nav.navegacion-principal a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+
+header a { 
   color: white; 
-}
-
-div.atencion a {
-  color: white;
-  text-decoration: none;
-  margin-left: 5px;
+  text-decoration: none; 
   font-weight: bold;
+  font-size: 14px;
+  padding: 6px 10px;
 }
+header figure{ 
+  flex-basis: 20%; 
+  display:flex; align-items:center; 
+  justify-content:flex-start; 
+  padding:6px }
+header figure img{ 
+  max-height:70px; 
+  width:auto; 
+  display:block }
 
-div.logo-Caronte {
-  flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  background-color: #333;
-  
-}
+header h1{ flex-basis:30%; 
+  font-size:22px; 
+  margin:0; 
+  padding-left:8px; 
+  color: white }
 
-div.logo-Caronte img {
-  display: block;
-  height: 100%;
-  padding-right: 10px;
-}
-
-div.logo-Caronte h1 {
-  color: white;
-  font-size: 24px;
-  padding-right: 10px;
-}
-
-div.logo-Caronte nav  {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-div.logo-Caronte nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-header div.logo-Caronte nav a:hover {
+header nav.navegacion-principal a:hover {
   box-shadow: 2px 2px 2px 1px rgb(0,0,0,1);
   transform: translateY(-3px);
   background-color: green;
@@ -93,7 +94,7 @@ header div.logo-Caronte nav a:hover {
 }
 
 main {
-  height: 70vh;
+  height: 90vh;
   width: 70vw;
   border: 2px solid black;
   width: 100%;
