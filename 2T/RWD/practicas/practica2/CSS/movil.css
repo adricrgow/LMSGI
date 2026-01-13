@@ -6,10 +6,41 @@
 
 header{
     background-color: #4CAF50;
-    padding: 20px;
-}
-
-header h1{
-    color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     
+}
+header h1{
+    text-align: center;
+    color:black;
+    margin: 10px 0;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border: 0px solid white;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 0px solid white;
+    text-align: center;
+}
+header nav a:hover{
+    background-color: white;
+    color: #4CAF50;
+}
+header button{
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
 }

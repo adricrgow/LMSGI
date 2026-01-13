@@ -1,6 +1,17 @@
 header{
-    background-color: gold;
+
+    flex-wrap: wrap;
 }
-header{
-    background-color: blanchedalmond;
+header h1{
+    flex-basis: 80%;
+    order: 1;
+}
+header nav{
+    flex-basis: 100%;
+    order: 3;
+}
+
+header button{
+    flex-basis: 20%;
+    order: 2;
 }
