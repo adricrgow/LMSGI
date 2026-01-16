@@ -23,9 +23,63 @@
         <button>Registrarse</button>
     </header>
     <main>
-        <aside></aside>
+        <nav>
+            <h3>Menu Lateral</h3>
+                <a href="#">Categoria 1</a>
+                <a href="#">Categoria 2</a>
+                <a href="#">Categoria 3</a>
+                <a href="#">Categoria 4</a>
+                <a href="#">Configuración</a>
+            </ul>
+        </nav>
+    <section class="contenido-principal">
+        <h2>Contenido Principal</h2>
+        <h3>Responsive Web Design con Mobile First</h3>
+        <p>El diseño adapta su estructura según el tamaño de pantalla:</p>
+        <ul>
+            <li><strong>Móvil (768px):</strong> Layout vertical, todo en columna.</li>
+            <li><strong>Tablet (768px - 1023px):</strong> Grid de 2 columnas, menú lateral + contenido/aside apilados.</li>
+            <li><strong>Desktop (≥ 1024px):</strong> Grid de 3 columnas, todas visibles simultáneamente.</li>
+        </ul>
+
+        <h4>Carga de estilos en cascada</h4>
+        <p>Primero se cargan los estilos base para móvil, luego los específicos para tablet y finalmente los de escritorio.</p>
+
+        <h4>Estructura de archivos CSS</h4>
+        <ul>
+            <li>css/movil.css – Estilos base para todos los dispositivos.</li>
+            <li>css/tablet.css – Estilos adicionales para tablets (≥768px).</li>
+            <li>css/desktop.css – Estilos adicionales para escritorio (≥1024px).</li>
+        </ul>
+    </section>
+        <aside>
+            <h3>Información Adicional</h3>
+            <p>Este es el area de contenido complementario que puede contener</p>
+            <ul>
+                <li>Publicidad</li>
+                <li>Enlaces relacionados</li>
+                <li>Widgets</li>
+                <li>Noticias destacadas</li>
+            </ul>
+        </aside>
     </main>
     <footer>
-    </footer>
+    <nav>
+        <h3>Síguenos</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+
+  <section class="informacion-contacto" >
+    <h3>Contacto</h3>
+    <ul class="informacion-contacto">
+      <li>Email: <a href="mailto:info@misitio.com">info@misitio.com</a></li>
+      <li>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></li>
+      <li>Ubicación: Madrid, España</li>
+    </ul>
+  </section>
+</footer>
 </body>
 </html>

@@ -15,3 +15,47 @@ header button{
     flex-basis: 20%;
     order: 2;
 }
+main{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+}
+main section.menu-lateral{
+    flex-basis: 50%;
+    margin: 0 10px 0 0;
+}
+main section.contenido-principal{
+    flex-basis: 100%;
+    margin: 0 0 0 10px;
+}
+main aside{
+    flex-basis: 100%;
+    margin: 0 0 0 10px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+footer section{
+    flex-basis: 45%;
+}
+footer section.redes-sociales h3{
+    text-align: left;
+}
+footer section.informacion-contacto h3{
+    text-align: center;
+}
+footer nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav a{   
+    border-radius: 10px;
+    padding: 10px;
+}
