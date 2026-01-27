@@ -3,42 +3,97 @@
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: grey;
-    padding: 10px;
-    display: grid;
-    grid-template-areas: none
-        ""
 
-    ;
+header{
+    background-color: rgb(229,229,255);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
 header nav.sociales{
-    background-color: aquamarine;
-    padding: 5px;
-    grid-area: navSociales;
+    padding: 6px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
 }
+
 header nav.login{
-    background-color: rosybrown;
-    padding: 5px;
-    grid-area: Logintlfn;
+    padding: 6px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
 }
-header figure{
-    background-color: bisque;
-    padding: 5px;
-    grid-area: Logo;
+
+header .branding{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
-header div.titulos{
-    background: blue;
-    padding: 5px;
-    grid-area: Titulo;
+
+header .branding .logo{
+    width: 10%;
 }
+
+header .branding .logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header .branding .titulos{
+    width: 90%;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+header .direccion{
+    display: flex;
+    gap: 16px;
+}
+
+header .direccion button{
+    padding: 12px 22px;
+    font-size: 18px;
+    background-color: #c8e6c9;
+    border: none;
+    border-radius: 8px;
+    line-height: 1.4;
+    text-align: left;
+
+}
+
 header i.fa-bars{
-    font-size: 30px;
-    grid-area: fab;
+    margin-left: auto;
+    font-size: 36px;
+    padding: 12px 14px;
+    border-radius: 8px;
 }
 header nav.menu-principal{
-    background-color: aqua;
-    padding: 5px;
-    grid-area: menuPrincipal;
+    background-color: #b3e5fc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
+
+header nav.menu-principal button{
+    padding: 12px 22px;
+    font-size: 18px;
+    background-color: #c8e6c9;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+}
+
