@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: grey;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: none
+        ""
+
+    ;
+}
+
+header nav.sociales{
+    background-color: aquamarine;
+    padding: 5px;
+    grid-area: navSociales;
+}
+header nav.login{
+    background-color: rosybrown;
+    padding: 5px;
+    grid-area: Logintlfn;
+}
+header figure{
+    background-color: bisque;
+    padding: 5px;
+    grid-area: Logo;
+}
+header div.titulos{
+    background: blue;
+    padding: 5px;
+    grid-area: Titulo;
+}
+header i.fa-bars{
+    font-size: 30px;
+    grid-area: fab;
+}
+header nav.menu-principal{
+    background-color: aqua;
+    padding: 5px;
+    grid-area: menuPrincipal;
+}

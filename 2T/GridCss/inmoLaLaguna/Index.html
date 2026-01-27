@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Desing con mobile first</title>
+    <!--Siempre se carga primero el css de moviles-->
+    <link rel="stylesheet" href="css/movil.css">
+    <!--Luego se cargan los estilos para tablets-->
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+    <!--Finalmente se cargan los estilos para escritorio-->
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="sociales">Iconos sociales</nav>
+        <nav>llama-login</nav>
+        <figure>logo</figure>
+        <div class="titulos"> La casa de tus sueños </div class="titulos">
+        <div class="direccion">
+            <button>direccion</button>
+            <button>correo</button>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <nav class="menu-principal">Home-viviendas</nav>
+    </header>
+</body>
+</html>
