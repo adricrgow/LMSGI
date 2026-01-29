@@ -1,0 +1,84 @@
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "branding sociales contacto"
+    "menu menu menu";
+  gap: 12px;
+  padding: 20px;
+  background-color: rgb(229,229,255);
+}
+
+header .branding{
+  grid-area: branding;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  column-gap: 16px;
+}
+
+header .branding figure.logo img{
+  width: 1000%;
+  height: auto;
+}
+
+header .branding .titulos{
+  display: grid;
+  margin-left: 4%;
+  
+}
+
+header nav.sociales{
+  grid-area: sociales;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  column-gap: 14px;
+  padding-right: 10px;
+}
+
+header nav.sociales img{
+  width: 28px;
+  height: 28px;
+}
+
+header .telefono{
+  grid-area: contacto;
+  display: inline-block;
+  font-size: 16px;
+  justify-self: end;
+  align-self: center;
+  margin-right: 8px;
+}
+
+header nav.login{
+  grid-area: contacto;
+  display: inline-block;
+  font-size: 16px;
+  justify-self: end;
+  align-self: center;
+}
+
+header .direccion{
+  display: none;
+}
+
+header nav.menu-principal{
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+}
+
+header nav.menu-principal button{
+  padding: 12px 22px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+header i.fa-bars{
+  display: none;
+}
