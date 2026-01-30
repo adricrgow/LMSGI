@@ -1,31 +1,32 @@
 header{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr auto auto;
   grid-template-areas:
-    "branding sociales contacto"
-    "menu menu menu";
+    "logo branding sociales contacto"
+    "menu menu menu menu";
   gap: 12px;
   padding: 20px;
   background-color: rgb(229,229,255);
 }
 
-header .branding{
-  grid-area: branding;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  column-gap: 16px;
+header figure.logo{
+  grid-area: logo;
+  width: 120px;
 }
 
-header .branding figure.logo img{
-  width: 1000%;
+header figure.logo img{
+  width: 100%;
   height: auto;
 }
 
-header .branding .titulos{
+header .branding{
+  grid-area: branding;
   display: grid;
+  align-items: center;
+}
+
+header .branding .titulos{
   margin-left: 4%;
-  
 }
 
 header nav.sociales{
@@ -60,23 +61,28 @@ header nav.login{
   align-self: center;
 }
 
+header nav.login .telefono{
+ display: none;
+}
 header .direccion{
   display: none;
 }
 
 header nav.menu-principal{
   grid-area: menu;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   padding: 10px;
 }
 
 header nav.menu-principal button{
   padding: 12px 22px;
-  font-size: 18px;
+  font-size: 16px;
+  background-color: #c8e6c9;
   border: none;
   border-radius: 8px;
+  text-align: center;
 }
 
 header i.fa-bars{

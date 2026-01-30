@@ -1,10 +1,10 @@
 header{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   grid-template-areas:
-    "login sociales"
-    "branding direccion"
-    "menu menu";
+    "login sociales sociales"
+    "logo branding direccion"
+    "menu menu menu";
   gap: 12px;
   padding: 20px;
   background-color: rgb(229,229,255);
@@ -12,30 +12,36 @@ header{
 
 header nav.login{
   grid-area: login;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: start;
   gap: 12px;
   font-size: 16px;
 }
 
 header nav.sociales{
   grid-area: sociales;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: end;
   gap: 12px;
   font-size: 16px;
 }
 
-header .branding{
-  grid-area: branding;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+header figure.logo{
+  grid-area: logo;
+  width: 100px;
 }
 
-header .branding .logo img{
-    width: 180%;
+header figure.logo img{
+    width: 100%;
     height: auto;
+}
+
+header .branding{
+  grid-area: branding;
+  display: grid;
+  align-items: center;
 }
 
 header .branding .titulos{
@@ -57,7 +63,8 @@ header .direccion button{
   background-color: #c8e6c9;
   border: none;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 
 header i.fa-bars{
@@ -66,17 +73,17 @@ header i.fa-bars{
 
 header nav.menu-principal{
   grid-area: menu;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   padding: 10px;
 }
 
 header nav.menu-principal button{
   padding: 12px 22px;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #c8e6c9;
   border: none;
   border-radius: 8px;
+  text-align: center;
 }
