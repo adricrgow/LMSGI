@@ -62,7 +62,7 @@ header nav.login{
 }
 
 header nav.login .telefono{
- display: none;
+  display: none;
 }
 header .direccion{
   display: none;
