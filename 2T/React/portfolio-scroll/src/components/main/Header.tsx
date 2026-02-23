@@ -1,17 +1,20 @@
+import'.Header.css';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
-//navegation es un array JS [] de objetos {}, --> Array JSON
-const navigation = [
 
-  { name: 'Quienes somos', 
+//navegation es un array JS [] de objetos {}, --> Array JSON
+const opciones = [
+
+  { 
+    name: 'Quienes somos', 
     href: '#', 
-    current: true 
+    current: false 
 
   },
   { name: 'Trabajos realizados', href: '#', current: false },
-  { name: 'Servicios', href: '#', current: false },
+  { name: 'Servicios', href: '#', current: true },
   { name: 'Contactos', href: '#', current: false },
   { name: 'Productos', href: '#', current: false },
   { name: 'Categorias', href: '#', current: false },
@@ -24,8 +27,8 @@ function classNames(...classes: any[]) {
 function Header() {
   // Codigo ts --> tsx o JS --> JSX
     return (
-    <Disclosure as="nav" className="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+ <Disclosure as="header"className= "relative bg-gray-800/502">
+    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -45,8 +48,8 @@ function Header() {
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {navigation.map((item) => (
+              <nav className="flex space-x-4">
+                {opciones.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -59,7 +62,7 @@ function Header() {
                     {item.name}
                   </a>
                 ))}
-              </div>
+              </nav>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -120,7 +123,7 @@ function Header() {
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
+          {opciones.map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
