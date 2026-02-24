@@ -3,6 +3,7 @@
 import Header from "../components/main/Header";
 import Qsomos2 from "../sections/Qsomos";
 import Trabajos from "../sections/Trabajos";
+import Formaciones from "../sections/Formaciones";
 
 // La parte publica de la aplicación
 function MainLayout(){
@@ -12,9 +13,10 @@ function MainLayout(){
             <main>
                 <Qsomos2/>
                 <Trabajos/>
+                <Formaciones/>
             </main>
         </div>
-    )
+    );
 }
 
 export default MainLayout;

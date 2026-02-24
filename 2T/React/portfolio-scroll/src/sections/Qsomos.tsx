@@ -13,11 +13,11 @@
 // }
 
 //idem anterior pero con funcion flecha
-const Qsomos2 = () => {
+const Qsomos = () => {
     return (
         <section id="qsomos"className="main-h-screen flex items-center justify-center">
             <h1 className="text-4xl font-bold">Quienes somos</h1>
         </section>
     )
 }
-export default Qsomos2;
+export default Qsomos;
