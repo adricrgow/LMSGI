@@ -4,6 +4,7 @@ import Header from "../components/main/Header";
 import Qsomos2 from "../sections/Qsomos";
 import Trabajos from "../sections/Trabajos";
 import Formaciones from "../sections/Formaciones";
+import Servicios from "../sections/Servicios";
 
 // La parte publica de la aplicación
 function MainLayout(){
@@ -14,6 +15,7 @@ function MainLayout(){
                 <Qsomos2/>
                 <Trabajos/>
                 <Formaciones/>
+                <Servicios/>
             </main>
         </div>
     );

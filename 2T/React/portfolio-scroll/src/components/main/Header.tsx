@@ -12,7 +12,7 @@ const navigation = [
   },
   { name: 'Trabajos', href: '#trabajos', current: false },
   { name: 'Formaciones', href: '#formaciones', current: true },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Servicios', href: '#servicios', current: false },
   { name: 'Productos', href: '#', current: false },
   { name: 'Categorias', href: '#', current: false },
 ]
