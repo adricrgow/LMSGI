@@ -1,3 +1,4 @@
+import { ServiciosCard } from '@/components/main/servicios/ServiciosCard';
 import dataServicios from '../data/servicios.json';
 const Servicios =() => {
     return(
@@ -6,7 +7,10 @@ const Servicios =() => {
             <h1 className="text-4xl font-bold">
                 Mis Servicios
             </h1>
-            <ul>
+
+            <ServiciosCard servicios={dataServicios} />
+        
+            {/* <ul>
                     {
                         dataServicios.map( (servicios) =>(
                             <li 
@@ -24,7 +28,7 @@ const Servicios =() => {
                     //     )
                     // })
                 }
-                </ul>
+                </ul> */}
                 
         </section>
     )
