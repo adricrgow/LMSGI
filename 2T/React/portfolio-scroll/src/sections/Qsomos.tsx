@@ -1,26 +1,104 @@
-// forma tradicional de definir los componentes en React
 
-// function Qsomos() {
-import { Button } from "@/components/ui/button"
-//     return ()
-// }
+//2-. Idem anterior pero con arrow function  
 
-// export default Qsomos;
+import { Button } from "@/components/ui/button";
+import { PrinterCheck } from "lucide-react";
+import { IconGitBranch } from "@tabler/icons-react";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@base-ui/react";
 
-//idem anterior pero con funcion + exportada directamente
 
-// export default function Qsomos1() {
-//     return ()
-// }
-
-//idem anterior pero con funcion flecha
-const Qsomos = () => {
+//codigo TS o JS
+const QSomos = () => {
+    //codigo TS o JS
     return (
-        <section id="qsomos"className="main-h-screen flex items-center justify-center">
-            <h1 className="text-4xl font-bold">Quienes somos</h1>
-        <Button variant="bluex">Quienes somos</Button>
+        //Mezclaremos codigo html + componentes de Tailwind + codigo TS o JS
+        <section id="qsomos" className="min-h-screen flex items-center justify-center flex-col">
+            <h1 className="text-4xl font-bold">Quienes Somos</h1>
+            <Button variant="bluex">Quienes Somos3</Button>
+            <Button variant="secondary" size="icon">
+                {/* <CircleFadingArrowUpIcon />
+                <IconDatabaseFilled /> */}
+                <PrinterCheck />
+            </Button>
+            <Button variant="secondary" size="sm">
+                <IconGitBranch /> New Branch
+            </Button>
+    <Card className="w-full max-w-sm">
+    <CardHeader>
+        <CardTitle>Iniciar Login</CardTitle>
+        <CardDescription>
+            Introduce tu email y contraseña para iniciar sesión en tu cuenta.
+        </CardDescription>
+        <CardAction>
+            <Button variant="link">Registrarse</Button>
+        </CardAction>
+    </CardHeader>
+    <CardContent>
+        <form>
+            <div className="flex flex-col gap-6">
+                <div className="grid gap-2">
+                    <label htmlFor="email" className="text-sm font-semibold">Email</label>
+                    <Input
+                        id="email"
+                        type="email"
+                        placeholder="m@example.com"
+                        required
+                    />
+                </div>
+                <div className="grid gap-2">
+                    <div className="flex items-center">
+                        <label htmlFor="password" className="text-sm font-semibold">Password</label>
+                        <a
+                            href="#"
+                            className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                        >
+                            Forgot your password?
+                        </a>
+                    </div>
+                    <Input id="password" type="password" required />
+                </div>
+            </div>
+        </form>
+    </CardContent>
+    <CardFooter className="flex-col gap-2">
+        <Button type="submit" className="w-full">
+            Login
+        </Button>
+        <Button variant="outline" className="w-full">
+            Login with Google
+        </Button>
+    </CardFooter>
+</Card>
+
         </section>
-        
     )
 }
-export default Qsomos;
+
+export default QSomos;
+
+//1-. forma de definir un componente React con funcion JS tradicional
+// function QSomos(){
+    
+//     return(
+    
+//     )
+// }
+
+// export default QSomos;
+
+//2-. Idem anterior pero con funcio + exportacion directa
+// export default function QSomos1(){
+
+//     return (
+
+//     )
+// }
