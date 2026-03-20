@@ -1,12 +1,6 @@
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import "tailwindcss";
 @import "@fontsource-variable/inter";
 
-@tailwind base;
-
-@custom-variant dark (&:is(.dark *));
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --text: #6b6375;
@@ -120,11 +114,8 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
