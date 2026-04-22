@@ -10,7 +10,7 @@ export interface IAuthor {
   href?: string;
 }
 
-export interface ITitulos {
+export interface ITrabajos {
   id: string;
   title: string;
   href: string;
