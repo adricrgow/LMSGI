@@ -6,8 +6,9 @@ import { Contacto } from "../pages/Contacto/Contacto"
 import Servicios from "../pages/servicios/Servicios"
 import { ServicioDetalle } from "@/components/main/servicios/ServicioDetalle"
 import Cursos from "@/pages/cursos/Cursos"
-import { CursoDetalle } from "@/components/main/servicios/CursoDetalle"
 import Titulos from "@/pages/Titulos/Titulos"
+import BackendLayout from "@/layouts/BackendLayout"
+import { CursoDetalle } from "@/components/main/Cursos/CursoDetalle"
 
 
 
@@ -15,6 +16,9 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Rutas privadas para el backend */}
+        <Route path="/admin" element={<BackendLayout />} />
+
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/trabajos" element={<Trabajos />} />

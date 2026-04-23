@@ -1,7 +1,7 @@
 import type { ICursos } from "@/model/interfaces/ICursos"
 import { supabase } from "@/model/utils/supabase"
 import { useEffect, useState } from "react"
-import { CursosCard } from "@/components/main/servicios/CursosCard"
+import { CursosCard } from "@/components/main/Cursos/CursosCard"
 const getCursos = async () => {
   const { data, error } = await supabase
     .from('cursos')
