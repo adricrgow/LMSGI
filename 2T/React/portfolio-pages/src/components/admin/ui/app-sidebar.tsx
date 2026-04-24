@@ -17,14 +17,14 @@ import { LayoutDashboardIcon, ListIcon, ChartBarIcon, FolderIcon, UsersIcon, Cam
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Adrian Contreras Ramírez",
+    email: "aconramb@g.educaand.es",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
     {
       title: "Cursos",
-      url: "#",
+      url: "/admin/cursos",
       icon: (
         <LayoutDashboardIcon
         />
@@ -32,7 +32,7 @@ const data = {
     },
     {
       title: "Trabajos",
-      url: "#",
+      url: "/admin/trabajos",
       icon: (
         <ListIcon
         />
@@ -40,7 +40,7 @@ const data = {
     },
     {
       title: "Servicios",
-      url: "#",
+      url: "/admin/servicios",
       icon: (
         <ChartBarIcon
         />

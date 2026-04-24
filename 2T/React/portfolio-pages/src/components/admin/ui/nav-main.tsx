@@ -7,6 +7,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { CirclePlusIcon, MailIcon } from "lucide-react"
+import { NavLink } from "react-router-dom"
 
 export function NavMain({
   items,
@@ -17,6 +18,8 @@ export function NavMain({
     icon?: React.ReactNode
   }[]
 }) {
+   const linkClass = ({ isActive }: { isActive: boolean }) =>
+        isActive ? "text-blue-500 border-b-2 border-blue-500" : "text-black hover:text-blue-500";
   return (
     <SidebarGroup>
       <SidebarGroupContent className="flex flex-col gap-2">
@@ -46,7 +49,9 @@ export function NavMain({
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton tooltip={item.title}>
                 {item.icon}
-                <span>{item.title}</span>
+                <NavLink to={item.url} className={linkClass}>
+                  {item.title}
+                </NavLink>
               </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
