@@ -10,8 +10,8 @@ import Titulos from "@/pages/admin/Titulos/Titulos"
 import BackendLayout from "@/layouts/BackendLayout"
 import { CursoDetalle } from "@/components/main/Cursos/CursoDetalle"
 import AdminCursos from "@/pages/admin/cursos/home"
-
-
+import AdminTrabajos from "@/pages/admin/Trabajos/home"
+import AdminTitulos from "@/pages/admin/Titulos/home"
 
 export const AppRouter = () => {
   return (
@@ -20,6 +20,8 @@ export const AppRouter = () => {
         {/* Rutas privadas para el backend */}
         <Route path="/admin" element={<BackendLayout />}>
           <Route path="/admin/cursos" element={<AdminCursos />} />
+          <Route path="/admin/trabajos" element={<AdminTrabajos />} />
+          <Route path="/admin/titulos" element={<AdminTitulos />} />
         </Route>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
@@ -35,3 +37,4 @@ export const AppRouter = () => {
     </BrowserRouter>
   )
 }
+
